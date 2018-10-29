@@ -1,0 +1,56 @@
+18:36:20
+ signError: array (
+  'to' => 'lixiaobo',
+  'totype' => 'user',
+  'content' => 'test',
+)
+18:37:05
+ send: array (
+  'touser' => 'lixiaobo',
+  'totag' => '',
+  'toparty' => '',
+  'msgtype' => 'text',
+  'agentid' => '1000002',
+  'text' => 
+  array (
+    'content' => 'test',
+  ),
+  'safe' => '0',
+)
+18:37:05
+ rev: array (
+  'result' => false,
+  'errno' => 60,
+  'msg' => 'SSL certificate problem: unable to get local issuer certificate',
+  'info' => 
+  array (
+    'url' => 'https://qyapi.weixin.qq.com/cgi-bin/message/send?access_token=A3jkv3wayz87BQV5cGZTRTtl48YFg3_v8SrkyRECANpJSxnZr_A70N-bWMFg7eLLehmaCUECMNlU-uYcA74EK5qO8IPDsjkU1cWXzto-leZ44CqErdpQP0t3hiUZKWB_V2lm7-s3c4SbELB6JMA5R-Dmgi9ZuA7fWj8_OOEYWSmsSlcX-V4zsvdqVkcnUENpnLfvB5jyzxhOe1fqP3hs9A',
+    'content_type' => NULL,
+    'http_code' => 0,
+    'header_size' => 0,
+    'request_size' => 0,
+    'filetime' => -1,
+    'ssl_verify_result' => 1,
+    'redirect_count' => 0,
+    'total_time' => 0.109,
+    'namelookup_time' => 0.047,
+    'connect_time' => 0.078,
+    'pretransfer_time' => 0,
+    'size_upload' => 0,
+    'size_download' => 0,
+    'speed_download' => 0,
+    'speed_upload' => 0,
+    'download_content_length' => -1,
+    'upload_content_length' => -1,
+    'starttransfer_time' => 0,
+    'redirect_time' => 0,
+    'redirect_url' => '',
+    'primary_ip' => '61.151.186.37',
+    'certinfo' => 
+    array (
+    ),
+    'primary_port' => 443,
+    'local_ip' => '192.168.0.132',
+    'local_port' => 59675,
+  ),
+)
