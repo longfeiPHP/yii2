@@ -82,6 +82,30 @@ class SiteController extends Controller
      */
     public function actionLogin()
     {
+    	if (false)
+    	{
+    		
+    	//radis
+    	$redis = Yii::$app->redis;
+    	$key = 'username';
+    	if ($val = $redis->get($key))
+    	{
+    		var_dump($val);
+    	}
+    	else 
+    	{
+    		$redis->set($key, 'marko');
+    		$redis->expire($key, 5);//过期时间
+    	}
+    	$redisName = $redis->get('name');
+    	//session
+    	$session = Yii::$app->session;
+    	$session->set('session_test','session_test');
+    	$session_test = $session->get('session_test');
+    	$session->destroy();
+    	exit;
+    	
+    	}
         if (!Yii::$app->user->isGuest) {
             return $this->goHome();
         }

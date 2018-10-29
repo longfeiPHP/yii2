@@ -54,10 +54,11 @@ $this->params['breadcrumbs'][] = $this->title;
 				  ?>
 				  <?php 
 				  	$data = Yii::$app->cache->get("PostCount");
+				  	Yii::$app->cache->set('ttt','ttt',200);
 				  	if ($data === false)
 				  	{
 				  		$data = Post::find()->count();
-				  		sleep(5);
+// 				  		sleep(5);
 				  		Yii::$app->cache->set('postCount',$data,2);
 				  	}
 				  	echo $data;
